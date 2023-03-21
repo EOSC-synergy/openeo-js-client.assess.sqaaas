@@ -1,0 +1,52 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.9
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/Open-EO/openeo-js-client:
+      branch: master
+      repo: https://github.com/Open-EO/openeo-js-client
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/Open-EO/openeo-js-client git:
+        commands:
+        - /usr/bin/env sh .sqa/script.stealthy-taupe-tapir.sh
+        container: qc.acc_crabby-razzmatazz-dog
+  QC.Doc:
+    repos:
+      github.com/Open-EO/openeo-js-client find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.messy-razzmatazz-meerkat.sh
+        container: qc.doc_breezy-periwinkle-wrasse
+      github.com/Open-EO/openeo-js-client git:
+        commands:
+        - /usr/bin/env sh .sqa/script.gamy-buff-argentino.sh
+        container: qc.doc_snoopy-aqua-worm
+      github.com/Open-EO/openeo-js-client markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.droopy-sapphire-wildebeest.sh
+        container: qc.doc_flabby-dandelion-ragdoll
+  QC.Lic:
+    repos:
+      github.com/Open-EO/openeo-js-client licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.muggy-wheat-penguin.sh
+        container: qc.lic_cheeky-green-baboon
+  QC.Sty:
+    repos:
+      github.com/Open-EO/openeo-js-client jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.snippy-auburn-fox.sh
+        container: qc.sty_cozy-asparagus-cougar
+  QC.Ver:
+    repos:
+      github.com/Open-EO/openeo-js-client get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-fuchsia-dollar.sh
+        container: qc.ver_stinky-white-russel
+timeout: 5400
