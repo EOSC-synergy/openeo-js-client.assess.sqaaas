@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/Open-EO/openeo-js-client git:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-zucchini-raccoon.sh
-        container: qc.acc_muzzy-salmon-whippet
+        - /usr/bin/env sh .sqa/script.snazzy-russet-gorilla.sh
+        container: qc.acc_hilly-burgundy-chin
   QC.Doc:
     repos:
       github.com/Open-EO/openeo-js-client find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-bistre-wolfhound.sh
-        container: qc.doc_gimpy-ochre-lemming
+        - /usr/bin/env sh .sqa/script.cranky-chartreuse-mouse.sh
+        container: qc.doc_stealthy-brass-impala
       github.com/Open-EO/openeo-js-client git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-carmine-butterfly.sh
-        container: qc.doc_freaky-teal-bonobo
+        - /usr/bin/env sh .sqa/script.lanky-mauve-anteater.sh
+        container: qc.doc_smelly-cerise-macaw
       github.com/Open-EO/openeo-js-client markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-salmon-burmese.sh
-        container: qc.doc_skimpy-khaki-centipede
+        - /usr/bin/env sh .sqa/script.geeky-aqua-tortoise.sh
+        container: qc.doc_chewy-coral-ostrich
   QC.Lic:
     repos:
       github.com/Open-EO/openeo-js-client licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-olivine-spitz.sh
-        container: qc.lic_craggy-teal-dingo
+        - /usr/bin/env sh .sqa/script.gummy-smalt-loon.sh
+        container: qc.lic_shaky-khaki-vulture
   QC.Sty:
     repos:
       github.com/Open-EO/openeo-js-client jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-purple-frigatebird.sh
-        container: qc.sty_snippy-linen-mule
+        - /usr/bin/env sh .sqa/script.lanky-magnolia-mayfly.sh
+        container: qc.sty_stealthy-tomato-dogfish
   QC.Ver:
     repos:
       github.com/Open-EO/openeo-js-client get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-cobalt-eel.sh
-        container: qc.ver_pretty-auburn-scorpion
+        - /usr/bin/env sh .sqa/script.flabby-cyan-grasshopper.sh
+        container: qc.ver_ugly-silver-woodlouse
 timeout: 5400
