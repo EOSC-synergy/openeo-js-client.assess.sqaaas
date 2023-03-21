@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/Open-EO/openeo-js-client git:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-taupe-tapir.sh
-        container: qc.acc_crabby-razzmatazz-dog
+        - /usr/bin/env sh .sqa/script.freaky-zucchini-raccoon.sh
+        container: qc.acc_muzzy-salmon-whippet
   QC.Doc:
     repos:
       github.com/Open-EO/openeo-js-client find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-razzmatazz-meerkat.sh
-        container: qc.doc_breezy-periwinkle-wrasse
+        - /usr/bin/env sh .sqa/script.lanky-bistre-wolfhound.sh
+        container: qc.doc_gimpy-ochre-lemming
       github.com/Open-EO/openeo-js-client git:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-buff-argentino.sh
-        container: qc.doc_snoopy-aqua-worm
+        - /usr/bin/env sh .sqa/script.grumpy-carmine-butterfly.sh
+        container: qc.doc_freaky-teal-bonobo
       github.com/Open-EO/openeo-js-client markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-sapphire-wildebeest.sh
-        container: qc.doc_flabby-dandelion-ragdoll
+        - /usr/bin/env sh .sqa/script.pasty-salmon-burmese.sh
+        container: qc.doc_skimpy-khaki-centipede
   QC.Lic:
     repos:
       github.com/Open-EO/openeo-js-client licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-wheat-penguin.sh
-        container: qc.lic_cheeky-green-baboon
+        - /usr/bin/env sh .sqa/script.stinky-olivine-spitz.sh
+        container: qc.lic_craggy-teal-dingo
   QC.Sty:
     repos:
       github.com/Open-EO/openeo-js-client jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-auburn-fox.sh
-        container: qc.sty_cozy-asparagus-cougar
+        - /usr/bin/env sh .sqa/script.greasy-purple-frigatebird.sh
+        container: qc.sty_snippy-linen-mule
   QC.Ver:
     repos:
       github.com/Open-EO/openeo-js-client get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-fuchsia-dollar.sh
-        container: qc.ver_stinky-white-russel
+        - /usr/bin/env sh .sqa/script.baggy-cobalt-eel.sh
+        container: qc.ver_pretty-auburn-scorpion
 timeout: 5400
